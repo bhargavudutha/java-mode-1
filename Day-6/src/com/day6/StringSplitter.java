@@ -2,7 +2,7 @@
 the below rules
 1. Using the delimiter, split the string and store these elements in array.
 2. Reverse each element of the string and convert it into lowercase.
-Include a class UserMainCode with a static method manipulateLiteral which
+Include a class UserMainCode with a static methodÂ manipulateLiteralÂ which
 accepts the string and character. The return type is the string array formed.
 Create a Class Main which would be used to accept the string and characterand call
 the static method present in UserMainCode.
@@ -25,10 +25,10 @@ import java.util.Scanner;
 
 public class StringSplitter {
 	public static void main(String[] args) {
-		System.out.println("enter string");
+		System.out.println("enter string");//AS in Sample Input
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();
-		System.out.println("enter character");
+		System.out.println("enter Delimiter");
 		char c = sc.next().charAt(0);
 		String[] Split1 = str.split("/");
 		for (int i = 0; i < Split1.length; i++) {
