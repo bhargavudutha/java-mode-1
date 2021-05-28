@@ -17,11 +17,10 @@ public class JDBC2 {
 		Statement st=con.createStatement();
 		st.executeUpdate("insert into customers values('Bhargav',10000,'bhargav@hcl.com')");
 		con.commit();
-		con.rollback();
 		}
 		catch(SQLException e)
 		{
-			
+			con.rollback();
 			System.out.println("Email already exist");
 		}
 	}
